@@ -14,8 +14,8 @@
 
     <div id="content">
        <button onclick="cargarContenido('RegistrarUsuario.jsp')">Registrar</button>
-        <button onclick="cargarContenido('IniciarUsuario.jsp')">Inicio</button>
-       
+       <button onclick="cargarContenido('IniciarUsuario.jsp')">Inicio</button>
+       <button onclick="cargarContenido('MostrarUsuarios.jsp')">MostrarUsuarios</button>
     </div>
 
     <script src="tu_script.js"></script>

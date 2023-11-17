@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name = "usuarios", schema = "gbp_operacional3")
+@Table(name = "usuarios", schema = "gbp_operacional")
 public class Usuario {
 
 	// ATRIBUTOS
@@ -37,12 +37,6 @@ public class Usuario {
 
 	@Column(name = "clave_usuario")
 	private String claveUsuario;
-
-	@Column(name = "estaBloqueado_usuario")
-	private boolean estaBloqueadoUsuario;
-
-	@Column(name = "fch_fin_bloqueo")
-	private Calendar fchFinBloqueo;
 
 	@Column(name = "fch_alta_usuario")
 	private Calendar fchAltaUsuario;
@@ -72,7 +66,7 @@ public Usuario(String dni_usuario, String nombre_usuario, String apellidos_usuar
 	}
 
 	public Usuario(String dniUsuario, String nombreUsuario, String apellidosUsuario, String tlfUsuario,
-			String emailUsuario, String claveUsuario, boolean estaBloqueadoUsuario,
+			String emailUsuario, String claveUsuario,
 			Calendar fchAltaUsuario) {
 		super();
 		this.dniUsuario = dniUsuario;
@@ -81,7 +75,6 @@ public Usuario(String dni_usuario, String nombre_usuario, String apellidos_usuar
 		this.tlfUsuario = tlfUsuario;
 		this.emailUsuario = emailUsuario;
 		this.claveUsuario = claveUsuario;
-		this.estaBloqueadoUsuario = estaBloqueadoUsuario;
 		this.fchAltaUsuario = fchAltaUsuario;
 	}
 
@@ -141,21 +134,6 @@ public Usuario(String dni_usuario, String nombre_usuario, String apellidos_usuar
 		this.claveUsuario = claveUsuario;
 	}
 
-	public boolean isEstaBloqueadoUsuario() {
-		return estaBloqueadoUsuario;
-	}
-
-	public void setEstaBloqueadoUsuario(boolean estaBloqueadoUsuario) {
-		this.estaBloqueadoUsuario = estaBloqueadoUsuario;
-	}
-
-	public Calendar getFchFinBloqueo() {
-		return fchFinBloqueo;
-	}
-
-	public void setFchFinBloqueo(Calendar fchFinBloqueo) {
-		this.fchFinBloqueo = fchFinBloqueo;
-	}
 
 	public Calendar getFchAltaUsuario() {
 		return fchAltaUsuario;
@@ -172,6 +150,8 @@ public Usuario(String dni_usuario, String nombre_usuario, String apellidos_usuar
 	public void setFchBajaUsuario(Calendar fchBajaUsuario) {
 		this.fchBajaUsuario = fchBajaUsuario;
 	}
+
+	
 
 	
 	
