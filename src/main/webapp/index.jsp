@@ -4,20 +4,35 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="estilos/menu.css">
+<link rel="stylesheet" href="estilos/estilo.css">
+
+<script src="script/script.js"></script>
+<title>Inicio</title>
+<!-- cambio -->
 </head>
 <body>
-<header>
-        <!-- Aquí puedes colocar tu barra de navegación si es necesario -->
-        <h1>Inicio</h1>
-    </header>
-
-    <div id="content">
-       <button onclick="cargarContenido('RegistrarUsuario.jsp')">Registrar</button>
+	<nav>	
+		<div class="menu">
+		<div class="logo"><a>Biblioteca</a></div>
+			<ul class="nav-links">
+								
+			</ul>
+		</div>
+	</nav>
+<!-- 
+	<div id="content">
+       <button onclick="cargarContenido('registro.jsp')">Registrar</button>
        <button onclick="cargarContenido('IniciarUsuario.jsp')">Inicio</button>
        <button onclick="cargarContenido('MostrarUsuarios.jsp')">MostrarUsuarios</button>
     </div>
-
-    <script src="tu_script.js"></script>
+ -->	
+	
+	<div id="caja">
+	<script>
+        cargarContenido('registro.jsp');
+    </script>
+	</div>  
+    
 </body>
 </html>

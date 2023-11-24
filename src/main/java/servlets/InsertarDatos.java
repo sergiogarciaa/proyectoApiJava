@@ -29,11 +29,11 @@ public class InsertarDatos extends HttpServlet {
     	
 		
     	String nombre = request.getParameter("nombre");
-        String apellido = request.getParameter("apellido");
+        String apellido = request.getParameter("apellidos");
         String dni = request.getParameter("dni");
-        String telefono = request.getParameter("telefono");
+        String telefono = request.getParameter("tlf");
         String email = request.getParameter("email");
-        String clave = request.getParameter("clave");
+        String clave = request.getParameter("contraseña");
         
         Usuario usuario = new Usuario(dni, nombre, apellido, telefono, email, clave);
         
